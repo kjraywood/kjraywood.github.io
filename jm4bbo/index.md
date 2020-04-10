@@ -5,7 +5,7 @@
 layout: page
 ---
 
-<!-- # Guide to Using Jitsi Meet with BBO -->
+# Guide to Using Jitsi Meet with BBO
 
 ## Some Background
 
@@ -81,15 +81,15 @@ They might also send a link similar to:  https://meet.jit.si/SomeRoomName
 
 **PC or Laptop**
 
-	* If you received a link, then open it in your browser
-
-    * If you just received a room-name, then open https://meet.jit.si
-	  and paste or type the room-name into `Start a Meeting`, then click `[ GO ]`.
-	  Just ignore the random names it generates; you can type or paste over them.
+  * If you received a link, then open it in your browser
+  * If you just received a room-name, then open https://meet.jit.si
+    and paste or type the room-name into `Start a Meeting`, then click
+    `[ GO ]`.  Just ignore the random names it generates; you can type
+    or paste over them.
 
 **Phone or Tablet**
 
-	* Paste or type the room name (or the link) into Enter room name
+  * Paste or type the room name (or the link) into Enter room name
 
 ## Starting a Meeting
 
@@ -100,10 +100,10 @@ and destroy it when the last participant leaves.
 
 ### About room names
 
-	* they are NOT case sensitive
-	* they may contain plus, minus, underscore or dot,
-	  but no other special characters
-    * it's best if don't contain spaces
+  * they are NOT case sensitive
+  * they may contain plus, minus, underscore or dot, but no other
+    special characters
+  * it's best if don't contain spaces
 
 __Acceptable room name:__   Shelleys-Virtual-Bridge-Club  
 __Link:__  https://meet.jit.si/Shelleys-Virtual-Bridge-Club
