@@ -3,9 +3,11 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page
+title: "Using Jitsi Meet with BridgeBase Online"
+theme: jekyll-theme-cayman
 ---
 
-# Guide to Using Jitsi Meet with BBO
+<!-- # Guide to Using Jitsi Meet with BBO -->
 
 ## Some Background
 
