@@ -13,20 +13,27 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Using Jitsi Meet with BridgeBase Online
-#email: your-email@example.com
+title: "Using Jitsi Meet with BridgeBase Online"
+email: ""
 description: ""
-  ##  >- # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+##  >- # this means to ignore newlines until "baseurl:"
+
+# the subpath of your site, e.g. /blog
+baseurl: "jm4bbo"
+
+# the base hostname & protocol for your site, e.g. http://example.com
+url: https://kjraywood.github.io
+
 #twitter_username: jekyllrb
 github_username:  kjraywood
 
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-cayman
-plugins:
-  - jekyll-feed
+
+# plugins:
+#   - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
