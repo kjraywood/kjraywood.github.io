@@ -4,7 +4,7 @@
 
 layout: default
 title: "Using Jitsi Meet with BridgeBase Online"
-theme: jekyll-theme-cayman
+description: ""
 ---
 
 <!-- # Guide to Using Jitsi Meet with BBO -->
