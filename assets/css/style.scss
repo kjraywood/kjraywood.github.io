@@ -1,0 +1,19 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.markdown-body {
+    h1 {
+	padding-bottom: 0.0em;
+	border-bottom: none;
+    }
+
+    h2 {
+	border-bottom: none;
+	padding-bottom: 0.0em;
+	margin-top:  -0.1em;
+	padding-top: 0.6em;
+	border-top: 1px solid lighten($gray-400, 3%);
+    }
+}
