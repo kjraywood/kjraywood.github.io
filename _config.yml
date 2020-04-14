@@ -3,7 +3,7 @@ github_username:  kjraywood
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-cayman
+theme: jekyll-theme-primer
 
 # plugins:
 #   - jekyll-feed
