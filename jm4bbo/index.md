@@ -81,7 +81,7 @@ removed.
 
 _Example_
 > **Room name:** `Correct Horse Battery Staple`  
-> **Link:** `https://meet.jit.si/CorrectHorseBatteryStaple
+> **Link:** https://meet.jit.si/CorrectHorseBatteryStaple
 
 Room names
 
