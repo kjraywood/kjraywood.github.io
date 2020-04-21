@@ -76,18 +76,18 @@ Install *Jitsi Meet* from the app store (play store for android)
 ## Meeting Rooms
 
 Meetings are defined by a *Room Name* which has an associated link
-constructed from the server URL followed by the room name.
+constructed from the server URL followed by the room name with spaces
+removed.
 
 _Example_
-> **Room name:** `LetsTalkAboutBridge`  
-> **Link:** `https://meet.jit.si/LetsTalkAboutBridge`
+> **Room name:** `Correct Horse Battery Staple`  
+> **Link:** `https://meet.jit.si/CorrectHorseBatteryStaple
 
 Room names
 
   * are NOT case sensitive
   * may contain plus, minus, underscore or dot, but no other
     special characters
-  * should not contain spaces
 
 ## Joining a Meeting
 
