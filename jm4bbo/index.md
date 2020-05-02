@@ -8,8 +8,6 @@ description: ""
 
 ![BBO and Jitsi Meet](./bbo-and-jitsi.png)
 
-<!-- {: .center-image } -->
-
 ## Some Background
 
  [Jitsi Meet](https://jitsi.org/jitsi-meet) is totally anonymous
