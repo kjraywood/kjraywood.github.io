@@ -624,7 +624,7 @@ div.unbreakable { page-break-inside: avoid; }
 
 /* Kel - increase the size of suit-symbols in Chrome and Safari */
 
-.cardsuit:not(*:root) {font-family: "Noto Sans", Arial, sans-serif;  font-size: larger; line-height: 0.75; }
+.cardsuit { font-family:  "DejaVu Sans", "Noto Sans Symbols2", "Nimbus Sans", "Open Sans", sans-serif; }
 
 /* Kel - draw oval around character */
 .OvalBox {
