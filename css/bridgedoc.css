@@ -793,8 +793,8 @@ div.unbreakable { page-break-inside: avoid; }
 	     margin: 0.0em 0.5em 0.0625em 0.0em;
 	   }
 
-.cyan-box { display: inline-block;
-	    background-color: #d4ffff;
+.lavender-box { display: inline-block;
+	    background-color: #f1d0fb;
 	    border-radius: 8px;
 	    border-width: 1px;
 	    border-style: solid;
