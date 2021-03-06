@@ -5,16 +5,16 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.7.1">
-<title>System Notes</title>
+<title>RB System Notes</title>
 <link rel="stylesheet" href="./../css/bridgedoc.css">
 <link rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Noto+Sans+Symbols|Noto+Serif">
 </head>
 <body class="book toc2 toc-left">
 <div id="header">
-<h1>System Notes</h1>
+<h1>RB System Notes</h1>
 <div class="details">
-<span id="revdate">March 1, 2021</span>
+<span id="revdate">March 5, 2021</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -197,7 +197,7 @@
 </li>
 </ul>
 </li>
-<li><a href="#_uncontested_auctions_1">Uncontested Auctions 1</a>
+<li><a href="#_uncontested_auctions">Uncontested Auctions</a>
 <ul class="sectlevel1">
 <li><a href="#_2_way_checkback">17. Two-Way Checkback</a>
 <ul class="sectlevel2">
@@ -227,11 +227,7 @@
 <li><a href="#_opener_rebids_diamonds">19.2. Opener rebids diamonds</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#_uncontested_auctions_2">Uncontested Auctions 2</a>
-<ul class="sectlevel1">
-<li><a href="#_opener_raises">20. After 1m&ndash;1M<code>&#59;</code>2M</a>
+<li><a href="#_opener_raises">20. 1m&ndash;1M<code>&#59;</code>2M</a>
 <ul class="sectlevel2">
 <li><a href="#_natural_invitations_and_choice_of_game">20.1. Natural invitations and choice-of-game</a></li>
 <li><a href="#_investigating_best_game_or_slam">20.2. Investigating best game or slam</a></li>
@@ -4305,14 +4301,18 @@ Responder would have bid their four-card major otherwise.
 <div class="sect3">
 <h4 id="_openers_rebids">12.2.1. Opener&#8217;s rebids</h4>
 <div class="paragraph">
-<p><span class="nobr">&nbsp;<span class="vlower mildblue big">&bull;</span> higher-ranking suit = shortness</span>
-<span class="nobr">&nbsp;<span class="vlower mildblue big">&bull;</span> original minor = Stayman</span></p>
+<p><span class="nobr">&nbsp;<span class="vlower mildblue big">&bull;</span> higher-ranking suit = shortness</span><br>
+<span class="nobr">&nbsp;<span class="vlower mildblue big">&bull;</span> other non-jump = natural</span><br>
+<span class="nobr">&nbsp;<span class="vlower mildblue big">&bull;</span> 1<span class="cardsuit orange">&#x2666;&#xFE0E;</span>&ndash;2NT<code>&#59;</code>&thinsp;4<span class="cardsuit green">&#x2663;&#xFE0E;</span> = shortness</span>
+<span class="nobr">&nbsp;<span class="vlower mildblue big">&bull;</span> jump to four of opening minor</span><span class="backspacey"> </span>
+<span class="nobr"><span class="indent">&nbsp; </span> = straight minorwood</span></p>
 </div>
 <div class="paragraph">
-<p>Showing shortness to avoid a bad 3NT has higher priority than
-Stayman because we can still find a major-suit fit when responder
-rejects notrump, but opener will be guessing if Stayman does not
-reveal a major-suit fit.</p>
+<p>The main purpose of showing shortness is to avoid a bad 3NT.</p>
+</div>
+<div class="paragraph">
+<p>It can also be useful as a slam try when opener has a strong
+single-suiter.</p>
 </div>
 <table class="tableblock frame-all grid-none fit-content">
 <colgroup>
@@ -4338,7 +4338,7 @@ reveal a major-suit fit.</p>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="alert">3<span class="cardsuit green">&#x2663;&#xFE0E;</span></span></p></td>
 <td class="tableblock halign-center valign-top"></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>Stayman</mark></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">natural, slammish, usually no shortness</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock"><span class="alert">3<span class="cardsuit orange">&#x2666;&#xFE0E;</span></span>,<span class="alert">3<span class="cardsuit red">&#x2665;&#xFE0E;</span></span>,<span class="alert">3<span class="cardsuit blue">&#x2660;&#xFE0E;</span></span></p></td>
@@ -4365,9 +4365,25 @@ reveal a major-suit fit.</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Following an opening bid of 1<span class="cardsuit orange">&#x2666;&#xFE0E;</span>, opener cannot show club shortness.
-Therefore, when responder has 3-3-4-3 and poor clubs, responder should
-start with an inverted-minor raise; not 2NT.</p>
+<p>Following an opening bid of 1<span class="cardsuit orange">&#x2666;&#xFE0E;</span>, opener cannot show club shortness
+below 3NT.</p>
+</div>
+<div class="paragraph">
+<p>Therefore, when considering how to respond to the 1<span class="cardsuit orange">&#x2666;&#xFE0E;</span> opening, holding
+3-3-4-3 and poor clubs, responder may choose to start with an
+inverted-minor raise instead of 2NT.</p>
+</div>
+<div class="paragraph">
+<p>With a slammish hand, opener will be unbalanced so we have no need for
+ConFit.
+Therefore, after 1<span class="cardsuit orange">&#x2666;&#xFE0E;</span>&ndash;2NT, we a jump to 4<span class="cardsuit green">&#x2663;&#xFE0E;</span> as shortness in clubs.</p>
+</div>
+<div class="paragraph">
+<p><mark>A jump to four of the same minor is straight minorwood.</mark></p>
+</div>
+<div class="paragraph">
+<p><mark>Rebidding the same minor and following with four of that minor is
+optional minorwood.</mark></p>
 </div>
 <table class="tableblock frame-all grid-none fit-content">
 <colgroup>
@@ -4412,10 +4428,16 @@ start with an inverted-minor raise; not 2NT.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">sign off</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="alert">4<span class="cardsuit green">&#x2663;&#xFE0E;</span></span></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">shortness, slam-try</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="alert">4<span class="cardsuit orange">&#x2666;&#xFE0E;</span></span></p></td>
 <td class="tableblock halign-center valign-top"></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>optional minorwood</mark></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>minorwood</mark></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock">4NT</p></td>
@@ -4425,30 +4447,6 @@ start with an inverted-minor raise; not 2NT.</p>
 </tr>
 </tbody>
 </table>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="../icons/note.png" alt="Note">
-</td>
-<td class="content">
-<div class="paragraph">
-<p>It&#8217;s unusual for a jump to be optional minorwood.
-The conditions here are:<br>
-<span class="nobr">&nbsp;<span class="vlower mildblue big">&bull;</span> partner has shown a balanced hand</span>
-<span class="nobr">&nbsp;<span class="vlower mildblue big">&bull;</span> we are in a GF</span>
-<span class="nobr">&nbsp;<span class="vlower mildblue big">&bull;</span> <mark>a natural bid of 3m is not available</span></mark></p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_same_minor_stayman">12.2.2. Same-minor Stayman</h4>
-<div class="paragraph">
-<p>If responder shows a 4cM then a non-jump bid in the other major agrees that major as trump.</p>
-</div>
 <table class="tableblock frame-all grid-none fit-content">
 <colgroup>
 <col>
@@ -4467,132 +4465,12 @@ The conditions here are:<br>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">?</p></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">3NT</p></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">sign off</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="alert">4<span class="cardsuit red">&#x2665;&#xFE0E;</span></span></p></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">agrees <span class="cardsuit blue">&#x2660;&#xFE0E;</span></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">4<span class="cardsuit blue">&#x2660;&#xFE0E;</span></p></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">sign off</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">4NT</p></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">quant.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="_extreme_hands">12.2.3. Extreme hands</h4>
-<div class="paragraph">
-<p>With 6-5 (m-M), opener can jump to four of the major on the
-second-round.
-This is non-forcing, hence not much more than a minimum opening bid.</p>
-</div>
-<div class="paragraph">
-<p>Responder, can pass or use KC for the major.</p>
-</div>
-<table class="tableblock frame-all grid-none fit-content">
-<colgroup>
-<col>
-<col>
-<col>
-<col>
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">1m</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">2NT</p></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="alert">4M</span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">?</p></td>
-<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">6&thinsp;&times;&thinsp;m, 5&thinsp;&times;&thinsp;M, <mark>NF</mark></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">P</p></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">to play, bad for slam</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="alert">4M+1</span></p></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">kickback</p></td>
-</tr>
-</tbody>
-</table>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<img src="../icons/tip.png" alt="Tip">
-</td>
-<td class="content">
-This is similar to Jacoby 2NT where we show shortness at the
-     3-level and a second suit at the 4-level.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>With a stronger hand opener rebids the original minor, as Stayman,
-and continues with four of a minor.
-This is <mark>optional minorwood</mark>, even if responder shows a four-card
-major, because responder has already shown a balanced hand.</p>
-</div>
-<table class="tableblock frame-all grid-none fit-content">
-<colgroup>
-<col>
-<col>
-<col>
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock">1m</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">2NT</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="alert">3m</span></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">3M,3NT</p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="alert">4m</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="alert">4<span class="cardsuit orange">&#x2666;&#xFE0E;</span></span></p></td>
 <td class="tableblock halign-center valign-top"></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><mark>optional minorwood</mark></p></td>
 </tr>
 </tbody>
 </table>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<img src="../icons/tip.png" alt="Tip">
-</td>
-<td class="content">
-If responder shows a 4cM, we set trump with the other major.
-     So the third bid by opener in the minor denies a fit for the 4cM.
-</td>
-</tr>
-</table>
-</div>
 </div>
 </div>
 <div class="sect2">
@@ -5876,7 +5754,7 @@ invitational.</p>
 </div>
 </div>
 </div>
-<h1 id="_uncontested_auctions_1" class="sect0">Uncontested Auctions 1</h1>
+<h1 id="_uncontested_auctions" class="sect0">Uncontested Auctions</h1>
 <div class="openblock partintro">
 <div class="content">
 Auctions following a one-level response, and a non-raise rebid by
@@ -7719,15 +7597,8 @@ doubleton.</p>
 </div>
 </div>
 </div>
-<h1 id="_uncontested_auctions_2" class="sect0">Uncontested Auctions 2</h1>
-<div class="openblock partintro">
-<div class="content">
-Auctions following a opener&#8217;s raise of a one-level response, and
-auctions started with a reverse or two-over-one.
-</div>
-</div>
 <div class="sect1">
-<h2 id="_opener_raises">20. After 1m&ndash;1M<code>&#59;</code>2M</h2>
+<h2 id="_opener_raises">20. 1m&ndash;1M<code>&#59;</code>2M</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><span class="vraise"><span class="icon"><img src="../icons/warning.png" alt="warning" width="24"></span></span>&nbsp; <span class="xemph">No Quality &amp; Quantity</span></p>
