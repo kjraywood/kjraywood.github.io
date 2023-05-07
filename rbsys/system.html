@@ -14,7 +14,7 @@
 <div id="header">
 <h1>RB System Notes</h1>
 <div class="details">
-<span id="revdate">May 6, 2023</span>
+<span id="revdate">May 7, 2023</span>
 </div>
 <div id="toc" class="toc2">
 <strong><a  href="index.html">Main Page</a></strong>
@@ -271,7 +271,8 @@
 </li>
 <li><a href="#_splinter_over_splinter">27. Splinter over Splinter</a>
 <ul class="sectlevel2">
-<li><a href="#_examples_2">27.1. Examples</a></li>
+<li><a href="#_following_splinter_over_splinter">27.1. Following splinter-over-splinter</a></li>
+<li><a href="#_examples_2">27.2. Examples</a></li>
 </ul>
 </li>
 </ul>
@@ -13258,17 +13259,24 @@ especially on interference auctions.</p>
 <p><strong>Following a GF splinter:</strong><br>
 <span class="nobr">&nbsp;<span class="vlower mildblue big">&bull;</span> return to trump suit = sign off</span><br>
 <span class="nobr">&nbsp;<span class="vlower mildblue big">&bull;</span> other non-jump suit-bid</span><span class="backspacey"> </span>
-<span class="nobr"><span class="indent">&nbsp; </span> = short-suit slam-try</span><br>
+<span class="nobr"><span class="indent">&nbsp; </span> = short-suit slam-try</span><span class="backspacey"> </span>
+<span class="nobr"><span class="indent">&nbsp; </span> = <mark>splinter-over-splinter</span></mark><br>
 <span class="nobr">&nbsp;<span class="vlower mildblue big">&bull;</span> if kickback applies, then</span><span class="backspacey"> </span>
 <span class="nobr"><span class="indent">&nbsp; </span> 4NT = substitute short-suit slam-try</span></p>
 </div>
+<div class="sect2">
+<h3 id="_following_splinter_over_splinter">27.1. Following splinter-over-splinter</h3>
 <div class="paragraph">
-<p><strong>Following splinter-over-splinter:</strong><br>
-<span class="nobr">&nbsp;<span class="vlower mildblue big">&bull;</span> return to trump suit = decline slam-try</span><br>
-<span class="nobr">&nbsp;<span class="vlower mildblue big">&bull;</span> other = KC in steps skipping trump-suit</span></p>
+<p><span class="nobr">&nbsp;<span class="vlower mildblue big">&bull;</span> return to trump suit = decline slam-try</span><br>
+<span class="nobr">&nbsp;<span class="vlower mildblue big">&bull;</span> trumps have been set, so kickback applies</span><br>
+<span class="nobr">&nbsp;<span class="vlower mildblue big">&bull;</span> if kickback is available, then repeating</span>
+<span class="nobr">&nbsp;<span class="vlower mildblue big">&bull;</span> first-splinter suit = exclusion</span><br>
+<span class="nobr">&nbsp;<span class="vlower mildblue big">&bull;</span> if we are above kickback,</span><span class="backspacey"> </span>
+<span class="nobr"><span class="indent">&nbsp; </span> <span class="alert">show</span> KC in steps skipping trump-suit</span><br></p>
+</div>
 </div>
 <div class="sect2">
-<h3 id="_examples_2">27.1. Examples</h3>
+<h3 id="_examples_2">27.2. Examples</h3>
 <table class="tableblock frame-all grid-none fit-content">
 <caption class="title">(a)</caption>
 <colgroup>
@@ -13307,45 +13315,14 @@ especially on interference auctions.</p>
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p><span class="bold-brickred">(b)</span></p>
+</div>
+<div class="paragraph">
+<p>Splinter-over-splinter still applies if it is a non-jump new-suit
+above four of the trump suit.</p>
+</div>
 <table class="tableblock frame-all grid-none fit-content">
-<caption class="title">(b)</caption>
-<colgroup>
-<col>
-<col>
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-center valign-middle"><div class="content"><table class="tableblock frame-allx grid-none stripes-none stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1<span class="cardsuit blue">&#x2660;&#xFE0E;</span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="alert">4<span class="cardsuit red">&#x2665;&#xFE0E;</span></span></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="alert">5<span class="cardsuit orange">&#x2666;&#xFE0E;</span></span></p></td>
-<td class="tableblock halign-left valign-top"></td>
-</tr>
-</tbody>
-</table></div></td>
-<td class="tableblock halign-center valign-middle"><div class="content"><table class="tableblock frame-nonex grid-none stripes-odd fit-content">
-<colgroup>
-<col>
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Splinter-over-splinter still applies above four of our trump suit</p></td>
-</tr>
-</tbody>
-</table></div></td>
-</tr>
-</tbody>
-</table>
-<table class="tableblock frame-all grid-none fit-content">
-<caption class="title">(c)</caption>
 <colgroup>
 <col>
 <col>
@@ -13383,7 +13360,7 @@ especially on interference auctions.</p>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-none fit-content">
-<caption class="title">(d)</caption>
+<caption class="title">(c)</caption>
 <colgroup>
 <col>
 <col>
@@ -13421,7 +13398,7 @@ especially on interference auctions.</p>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-none fit-content">
-<caption class="title">(e)</caption>
+<caption class="title">(d)</caption>
 <colgroup>
 <col>
 <col>
@@ -13459,7 +13436,7 @@ especially on interference auctions.</p>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-none fit-content">
-<caption class="title">(f)</caption>
+<caption class="title">(e)</caption>
 <colgroup>
 <col>
 <col>
@@ -13482,7 +13459,7 @@ especially on interference auctions.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="alert">4<span class="cardsuit red">&#x2665;&#xFE0E;</span></span></p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="alert">5<span class="cardsuit green">&#x2663;&#xFE0E;</span></span></p></td>
 </tr>
 </tbody>
 </table></div></td>
@@ -13502,7 +13479,7 @@ especially on interference auctions.</p>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-none fit-content">
-<caption class="title">(g)</caption>
+<caption class="title">(f)</caption>
 <colgroup>
 <col>
 <col>
@@ -13526,7 +13503,7 @@ especially on interference auctions.</p>
 <td class="tableblock halign-center valign-top"></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="alert">4<span class="cardsuit red">&#x2665;&#xFE0E;</span></span></p></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">accept, 0 or 3 KC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="orange-box">last train??</span></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top"></td>
@@ -13538,22 +13515,69 @@ especially on interference auctions.</p>
 <td class="tableblock halign-center valign-top"></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="alert">4NT</span></p></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">accept, 1 or 4 KC</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">KC asking</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top"></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><span class="alert">5<span class="cardsuit green">&#x2663;&#xFE0E;</span></span></p></td>
 <td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">accept, 2 KC w/o <span class="cardsuit blue">&#x2660;&#xFE0E;</span>Q</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="alert">5<span class="cardsuit orange">&#x2666;&#xFE0E;</span></span></p></td>
-<td class="tableblock halign-center valign-top"></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">accept, 2 KC with <span class="cardsuit blue">&#x2660;&#xFE0E;</span>Q</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">exclusion</p></td>
 </tr>
 </tbody>
 </table>
+<table class="tableblock frame-all grid-none fit-content">
+<caption class="title">(g)</caption>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1<span class="cardsuit blue">&#x2660;&#xFE0E;</span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="alert">4<span class="cardsuit red">&#x2665;&#xFE0E;</span></span></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="alert">5<span class="cardsuit orange">&#x2666;&#xFE0E;</span></span></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">?</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">shortness slam-try</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="alert">5<span class="cardsuit red">&#x2665;&#xFE0E;</span></span></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">accept, 0 or 3 KC</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">5<span class="cardsuit blue">&#x2660;&#xFE0E;</span></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">decline</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="alert">5NT</span></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">accept, 1 or 4 KC</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>In the above example, 5<span class="cardsuit red">&#x2665;&#xFE0E;</span> is not exclusion because kickback was not
+available for the first-splinter bidder.   So if accepting the
+short-suit-try, the first-splinter bidder shows KC in steps skipping
+the trump suit.</p>
+</div>
 </div>
 </div>
 </div>
