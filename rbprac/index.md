@@ -1,6 +1,6 @@
 ---
 layout: mydefault
-title: "Raywood-Burns Play and Defence Dractice"
+title: "Raywood-Burns Play and Defence Practice"
 description: ""
 ---
 
