@@ -1,87 +1,154 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I've Got a Secret — Ed Manfield</title>
 <style>
-  .art { font-family: var(--font-voice); font-size: 16px; line-height: 1.8; color: var(--text-primary); max-width: 660px; margin: 0 auto; padding: 2rem 1rem; }
-  .art h1 { font-size: 22px; font-weight: 500; margin: 0 0 0.25rem; }
-  .art .byline { font-style: italic; color: var(--text-secondary); margin: 0 0 1.5rem; font-size: 15px; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f5f4f0;
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+  .art {
+    font-size: clamp(16px, 4.5vw, 18px);
+    line-height: 1.8;
+    color: #1a1a18;
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .art h1 { font-size: clamp(20px, 5.5vw, 24px); font-weight: 500; margin: 0 0 0.25rem; }
+  .art .byline { font-style: italic; color: #666; margin: 0 0 1.5rem; font-size: clamp(14px, 4vw, 16px); }
   .art p { margin: 0 0 1rem; }
-  .hand { font-family: var(--font-mono); font-size: 14px; background: var(--surface-1); border: 0.5px solid var(--border); border-radius: var(--radius); padding: 0.4rem 0.9rem; display: inline-block; margin: 0.3rem 0 0.5rem; }
-  .problem { border-left: 2px solid var(--border-strong); padding-left: 1rem; margin: 1.2rem 0; }
-  .problem .label { font-size: 14px; font-weight: 500; color: var(--text-secondary); margin-bottom: 0.3rem; }
-  .bid-table { border-collapse: collapse; margin: 0.5rem auto 0.8rem; font-family: var(--font-mono); font-size: 14px; }
-  .bid-table.headed th { color: var(--text-secondary); font-weight: 500; font-size: 13px; padding: 2px 14px; text-align: center; border-bottom: 0.5px solid var(--border); }
-  .bid-table td { padding: 2px 14px; text-align: center; }
-  .bid-wrap { text-align: center; margin: 0.4rem 0 0.8rem; }
-  .hand-label { font-family: var(--font-mono); font-size: 14px; margin: 0.5rem 0 0.2rem; }
-  .hand-response { margin: 0.15rem 0 0.8rem; padding-left: 0.5rem; }
-</style>
 
+  .hand {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(14px, 3.8vw, 15px);
+    background: #eeecea;
+    border: 0.5px solid #ccc;
+    border-radius: 6px;
+    padding: 0.4rem 0.75rem;
+    display: inline-block;
+    margin: 0.3rem 0 0.5rem;
+    white-space: normal;
+    word-break: break-word;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .problem {
+    border-left: 2px solid #aaa;
+    padding-left: 1rem;
+    margin: 1.2rem 0;
+  }
+  .problem .label {
+    font-size: clamp(13px, 3.5vw, 14px);
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 0.4rem;
+  }
+
+  .bid-wrap { text-align: center; margin: 0.6rem 0 0.9rem; }
+  .bid-table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(14px, 3.8vw, 15px);
+  }
+  .bid-table.headed th {
+    color: #666;
+    font-weight: 500;
+    font-size: clamp(12px, 3.3vw, 13px);
+    padding: 3px 10px;
+    text-align: center;
+    border-bottom: 0.5px solid #bbb;
+  }
+  .bid-table td { padding: 3px 10px; text-align: center; }
+
+  .hand-label { margin: 0.5rem 0 0.2rem; }
+  .hand-response { margin: 0.15rem 0 0.9rem; padding-left: 0.25rem; }
+
+  @media (prefers-color-scheme: dark) {
+    body { background: #1e1e1c; }
+    .art { color: #e8e6e0; }
+    .art .byline, .problem .label { color: #999; }
+    .hand { background: #2a2a28; border-color: #444; }
+    .bid-table.headed th { color: #999; border-bottom-color: #444; }
+  }
+</style>
+</head>
+<body>
 <div class="art">
   <h1>I've Got a Secret</h1>
   <p class="byline">By Ed Manfield, Arlington, Va</p>
 
-  <p>I've got a secret. My partners have begged me not to reveal it – they claim it will cost us 20 imps a session should it get out. However, they exaggerate.</p>
+  <p>I've got a secret. My partners have begged me not to reveal it &ndash; they claim it will cost us 20 imps a session should it get out. However, they exaggerate.</p>
 
-  <p>Actually, I didn't know I had a secret until I noticed a few recent Master Solvers problems:</p>
+  <p>Actually, I didn&rsquo;t know I had a secret until I noticed a few recent Master Solvers problems:</p>
 
   <div class="problem">
-    <div class="label">August '80 &nbsp;·&nbsp; Matchpoints; both vulnerable</div>
-    <div class="hand">♠ A&#8202;7&#8202;6&#8202;3 &nbsp; ♥ K&#8202;J&#8202;9 &nbsp; ♦ 6&#8202;4&#8202;3 &nbsp; ♣ Q&#8202;9&#8202;5</div>
+    <div class="label">August &lsquo;80 &nbsp;&middot;&nbsp; Matchpoints; both vulnerable</div>
+    <div class="hand">&#9824; A&#8202;7&#8202;6&#8202;3 &nbsp; &#9825; K&#8202;J&#8202;9 &nbsp; &#9826; 6&#8202;4&#8202;3 &nbsp; &#9827; Q&#8202;9&#8202;5</div>
     <div class="bid-wrap">
       <table class="bid-table headed">
         <tr><th>South</th><th>West</th><th>North</th><th>East</th></tr>
-        <tr><td>Pass</td><td>Pass</td><td>1♦</td><td>Dbl</td></tr>
-        <tr><td>Rdbl</td><td>2♣</td><td>Pass</td><td>Pass</td></tr>
+        <tr><td>Pass</td><td>Pass</td><td>1&#9826;</td><td>Dbl</td></tr>
+        <tr><td>Rdbl</td><td>2&#9827;</td><td>Pass</td><td>Pass</td></tr>
         <tr><td>?</td><td></td><td></td><td></td></tr>
       </table>
     </div>
   </div>
 
   <div class="problem">
-    <div class="label">December '80 &nbsp;·&nbsp; IMPs; NS vulnerable</div>
-    <div class="hand">♠ K&#8202;Q&#8202;5&#8202;2 &nbsp; ♥ 9&#8202;6&#8202;4 &nbsp; ♦ A&#8202;8&#8202;7 &nbsp; ♣ Q&#8202;6&#8202;3</div>
+    <div class="label">December &lsquo;80 &nbsp;&middot;&nbsp; IMPs; NS vulnerable</div>
+    <div class="hand">&#9824; K&#8202;Q&#8202;5&#8202;2 &nbsp; &#9825; 9&#8202;6&#8202;4 &nbsp; &#9826; A&#8202;8&#8202;7 &nbsp; &#9827; Q&#8202;6&#8202;3</div>
     <div class="bid-wrap">
       <table class="bid-table headed">
         <tr><th>South</th><th>West</th><th>North</th><th>East</th></tr>
-        <tr><td></td><td></td><td>1♣</td><td>Dbl</td></tr>
-        <tr><td>Rdbl</td><td>3♥</td><td>Pass</td><td>Pass</td></tr>
+        <tr><td></td><td></td><td>1&#9827;</td><td>Dbl</td></tr>
+        <tr><td>Rdbl</td><td>3&#9825;</td><td>Pass</td><td>Pass</td></tr>
         <tr><td>?</td><td></td><td></td><td></td></tr>
       </table>
     </div>
   </div>
 
-  <p>Do you double and risk partner's passing when short in their suit, or do you bid and give up a possibly juicy penalty? These are situations panel members have faced hundreds of times. Nevertheless, panellists find these problems difficult; most admit they are just guessing.</p>
+  <p>Do you double and risk partner&rsquo;s passing when short in their suit, or do you bid and give up a possibly juicy penalty? These are situations panel members have faced hundreds of times. Nevertheless, panellists find these problems difficult; most admit they are just guessing.</p>
 
-  <p>In my view, these problems were created by the first-round redouble. Players have always redoubled on hands like these. The redouble has been used to announce a "big" hand (say, 10+ points), with no particular limitation on shape. In fact, failure to redouble once denied a big hand, and still does in Bridge World Standard. Through the years there have been very few changes in this concept, although many now play that new suits, and certain jumps over the double, are forcing and so can be made on good hands. Basically, the redouble remains a knee-jerk, macho noise, which is made on such a wide variety of hands that subsequent bidding becomes very difficult.</p>
+  <p>In my view, these problems were created by the first-round redouble. Players have always redoubled on hands like these. The redouble has been used to announce a &ldquo;big&rdquo; hand (say, 10+ points), with no particular limitation on shape. In fact, failure to redouble once denied a big hand, and still does in Bridge World Standard. Through the years there have been very few changes in this concept, although many now play that new suits, and certain jumps over the double, are forcing and so can be made on good hands. Basically, the redouble remains a knee-jerk, macho noise, which is made on such a wide variety of hands that subsequent bidding becomes very difficult.</p>
 
   <p>I believe the redouble should be used as a defensive weapon. When the opponents enter the auction, we want to punish them if they have no cards and no fit. Judicious use of the redouble can help.</p>
 
   <p>From this perspective, it serves no purpose to redouble one diamond on,</p>
 
-  <div class="hand">♠ A&#8202;7&#8202;6&#8202;3 &nbsp; ♥ K&#8202;J&#8202;9 &nbsp; ♦ 6&#8202;4&#8202;3 &nbsp; ♣ Q&#8202;9&#8202;5</div>
+  <div class="hand">&#9824; A&#8202;7&#8202;6&#8202;3 &nbsp; &#9825; K&#8202;J&#8202;9 &nbsp; &#9826; 6&#8202;4&#8202;3 &nbsp; &#9827; Q&#8202;9&#8202;5</div>
 
   <p>or one club on,</p>
 
-  <div class="hand">♠ K&#8202;Q&#8202;5&#8202;2 &nbsp; ♥ 9&#8202;6&#8202;4 &nbsp; ♦ A&#8202;8&#8202;7 &nbsp; ♣ Q&#8202;6&#8202;3</div>
+  <div class="hand">&#9824; K&#8202;Q&#8202;5&#8202;2 &nbsp; &#9825; 9&#8202;6&#8202;4 &nbsp; &#9826; A&#8202;8&#8202;7 &nbsp; &#9827; Q&#8202;6&#8202;3</div>
 
   <p>Surely it is unlikely that partner will be able to double the suit they choose, and you will be uncomfortable doubling anything yourself, except, perhaps, spades. Your redouble will usually enable them to get off the hook. Furthermore, it leaves you very vulnerable to preemption.</p>
 
-  <p>Some panellists objected to the redouble, favouring one spade or one notrump instead. However, these bids are cowardly. They give up the possibility of penalty. What astonishes me about the panel's comments is that no member argued for what I regard as the correct and obvious first-round action on the South hand: PASS!</p>
+  <p>Some panellists objected to the redouble, favouring one spade or one notrump instead. However, these bids are cowardly. They give up the possibility of penalty. What astonishes me about the panel&rsquo;s comments is that no member argued for what I regard as the correct and obvious first-round action on the South hand: PASS!</p>
 
-  <p>That's right, Pass on these hands, and follow with double at your next turn. This sequence should show a balanced hand (usually 4-3-3-3, when partner opens a minor) with 10+ points. It describes your hand, makes it difficult for West to preempt (since a jump over your Pass would be constructive), and enables partner to punish the opponents when they are overboard. Furthermore, this treatment gives up almost nothing.</p>
+  <p>That&rsquo;s right, Pass on these hands, and follow with double at your next turn. This sequence should show a balanced hand (usually 4-3-3-3, when partner opens a minor) with 10+ points. It describes your hand, makes it difficult for West to preempt (since a jump over your Pass would be constructive), and enables partner to punish the opponents when they are overboard. Furthermore, this treatment gives up almost nothing.</p>
 
   <p>Well, the secret is out if it is OK to pass over a double holding a good hand. When you do so, your redoubles acquire more definition. They show 10+ points with good defense against all but one of their suits. Thus, you might redouble one club on,</p>
 
-  <div class="hand">♠ K&#8202;T&#8202;9&#8202;x&#8202;x &nbsp; ♥ x&#8202;x &nbsp; ♦ A&#8202;J&#8202;x&#8202;x &nbsp; ♣ K&#8202;x&#8202;x</div>
+  <div class="hand">&#9824; K&#8202;T&#8202;9&#8202;x&#8202;x &nbsp; &#9825; x&#8202;x &nbsp; &#9826; A&#8202;J&#8202;x&#8202;x &nbsp; &#9827; K&#8202;x&#8202;x</div>
 
   <p>or one diamond on,</p>
 
-  <div class="hand">♠ Q&#8202;T&#8202;x&#8202;x &nbsp; ♥ x&#8202;x &nbsp; ♦ Q&#8202;x&#8202;x &nbsp; ♣ A&#8202;Q&#8202;x&#8202;x</div>
+  <div class="hand">&#9824; Q&#8202;T&#8202;x&#8202;x &nbsp; &#9825; x&#8202;x &nbsp; &#9826; Q&#8202;x&#8202;x &nbsp; &#9827; A&#8202;Q&#8202;x&#8202;x</div>
 
   <p>If they bid hearts in these instances, partner will double only with four of them, because he knows you are likely to be short in hearts. Similarly, if the auction proceeds:</p>
 
   <div class="bid-wrap">
     <table class="bid-table">
-      <tr><td>1♠</td><td>Dbl</td><td>Rdbl</td><td>2♥</td></tr>
+      <tr><td>1&#9824;</td><td>Dbl</td><td>Rdbl</td><td>2&#9825;</td></tr>
       <tr><td>Pass</td><td>Pass</td><td>Dbl</td><td></td></tr>
     </table>
   </div>
@@ -90,23 +157,23 @@
 
   <div class="bid-wrap">
     <table class="bid-table">
-      <tr><td>1♠</td><td>Dbl</td><td>Rdbl</td><td>3♥</td></tr>
+      <tr><td>1&#9824;</td><td>Dbl</td><td>Rdbl</td><td>3&#9825;</td></tr>
       <tr><td>Pass</td><td>Pass</td><td>Dbl</td><td></td></tr>
     </table>
   </div>
 
-  <p>partner will know your double is for business. He doesn't have to contend with the possibility that you hold three little or queen-third in their suit.</p>
+  <p>partner will know your double is for business. He doesn&rsquo;t have to contend with the possibility that you hold three little or queen-third in their suit.</p>
 
   <p>This style facilitates constructive bidding too. How many times have you held,</p>
 
-  <div class="hand">♠ x&#8202;x &nbsp; ♥ Q&#8202;x&#8202;x&#8202;x &nbsp; ♦ A&#8202;K&#8202;x &nbsp; ♣ A&#8202;x&#8202;x&#8202;x</div>
+  <div class="hand">&#9824; x&#8202;x &nbsp; &#9825; Q&#8202;x&#8202;x&#8202;x &nbsp; &#9826; A&#8202;K&#8202;x &nbsp; &#9827; A&#8202;x&#8202;x&#8202;x</div>
 
   <p>and heard the auction go:</p>
 
   <div class="bid-wrap">
     <table class="bid-table">
-      <tr><td>1♦</td><td>Dbl</td><td>Rdbl</td><td>1♥</td></tr>
-      <tr><td>Pass</td><td>2♦</td><td>Pass</td><td>Pass</td></tr>
+      <tr><td>1&#9826;</td><td>Dbl</td><td>Rdbl</td><td>1&#9825;</td></tr>
+      <tr><td>Pass</td><td>2&#9826;</td><td>Pass</td><td>Pass</td></tr>
       <tr><td>?</td><td></td><td></td><td></td></tr>
     </table>
   </div>
@@ -117,7 +184,7 @@
 
   <div class="bid-wrap">
     <table class="bid-table">
-      <tr><td>1♥</td><td>2NT</td><td>Dbl</td><td>3♦</td></tr>
+      <tr><td>1&#9825;</td><td>2NT</td><td>Dbl</td><td>3&#9826;</td></tr>
       <tr><td>Pass</td><td>Pass</td><td>Dbl</td><td></td></tr>
     </table>
   </div>
@@ -126,7 +193,7 @@
 
   <div class="bid-wrap">
     <table class="bid-table">
-      <tr><td>1♥</td><td>Dbl</td><td>Rdbl</td><td>3♦</td></tr>
+      <tr><td>1&#9825;</td><td>Dbl</td><td>Rdbl</td><td>3&#9826;</td></tr>
       <tr><td>Pass</td><td>Pass</td><td>Dbl</td><td></td></tr>
     </table>
   </div>
@@ -135,8 +202,8 @@
 
   <div class="bid-wrap">
     <table class="bid-table">
-      <tr><td>1♠</td><td>Pass</td><td>4♥</td><td>4NT</td></tr>
-      <tr><td>Pass</td><td>5♦</td><td>Pass</td><td>Pass</td></tr>
+      <tr><td>1&#9824;</td><td>Pass</td><td>4&#9825;</td><td>4NT</td></tr>
+      <tr><td>Pass</td><td>5&#9826;</td><td>Pass</td><td>Pass</td></tr>
       <tr><td>Dbl</td><td></td><td></td><td></td></tr>
     </table>
   </div>
@@ -145,8 +212,8 @@
 
   <div class="bid-wrap">
     <table class="bid-table">
-      <tr><td>1♥</td><td>Pass</td><td>2♥</td><td>Pass</td></tr>
-      <tr><td>Pass</td><td>Dbl</td><td>Pass</td><td>2♠</td></tr>
+      <tr><td>1&#9825;</td><td>Pass</td><td>2&#9825;</td><td>Pass</td></tr>
+      <tr><td>Pass</td><td>Dbl</td><td>Pass</td><td>2&#9824;</td></tr>
       <tr><td>Pass</td><td>Pass</td><td>Dbl</td><td></td></tr>
     </table>
   </div>
@@ -157,11 +224,11 @@
 
   <div class="problem">
     <div class="label">IMPs, EW vulnerable</div>
-    <div class="hand">♠ K&#8202;T&#8202;7&#8202;3&#8202;2 &nbsp; ♥ 4 &nbsp; ♦ K&#8202;8&#8202;6&#8202;2 &nbsp; ♣ A&#8202;K&#8202;7</div>
+    <div class="hand">&#9824; K&#8202;T&#8202;7&#8202;3&#8202;2 &nbsp; &#9825; 4 &nbsp; &#9826; K&#8202;8&#8202;6&#8202;2 &nbsp; &#9827; A&#8202;K&#8202;7</div>
     <div class="bid-wrap">
       <table class="bid-table headed">
         <tr><th>South</th><th>West</th><th>North</th><th>East</th></tr>
-        <tr><td>1♥</td><td>Pass</td><td>3♥</td><td>Dbl</td></tr>
+        <tr><td>1&#9825;</td><td>Pass</td><td>3&#9825;</td><td>Dbl</td></tr>
         <tr><td>?</td><td></td><td></td><td></td></tr>
       </table>
     </div>
@@ -169,29 +236,29 @@
 
   <p>I think it is clear to redouble. This shows a good holding in some of their suits, and creates a force. Partner will not double four hearts unless he has good hearts.</p>
 
-  <p>Yet, only five panellists chose to redouble. The majority, along with director Wolff, rejected the redouble because it would "encourage partner to double." This view is presumably based on the assumption that redouble shows a strong balanced hand. However, as we have seen, this strong balanced hand can afford to pass and later double the run out.</p>
+  <p>Yet, only five panellists chose to redouble. The majority, along with director Wolff, rejected the redouble because it would &ldquo;encourage partner to double.&rdquo; This view is presumably based on the assumption that redouble shows a strong balanced hand. However, as we have seen, this strong balanced hand can afford to pass and later double the run out.</p>
 
   <p>Have I convinced you that it is sometimes appropriate to Pass over a takeout double holding a good hand? If so, then why not Pass on various awkward hands with trump support? Consider:</p>
 
   <div class="bid-wrap">
     <table class="bid-table">
-      <tr><td>1♠</td><td>Dbl</td><td>Pass</td><td>2♥</td></tr>
+      <tr><td>1&#9824;</td><td>Dbl</td><td>Pass</td><td>2&#9825;</td></tr>
       <tr><td>Pass</td><td>Pass</td><td>?</td><td></td></tr>
     </table>
   </div>
 
   <p>You hold, as responder:</p>
 
-  <div class="hand-label"><span class="hand">♠ Q&#8202;x&#8202;x&#8202;x &nbsp; ♥ A&#8202;T&#8202;x&#8202;x&#8202;x&#8202;x&#8202;x &nbsp; ♦ — &nbsp; ♣ x&#8202;x</span></div>
+  <div class="hand-label"><span class="hand">&#9824; Q&#8202;x&#8202;x&#8202;x &nbsp; &#9825; A&#8202;T&#8202;x&#8202;x&#8202;x&#8202;x&#8202;x &nbsp; &#9826; &mdash; &nbsp; &#9827; x&#8202;x</span></div>
   <p class="hand-response">Bid two spades, as normally.</p>
 
-  <div class="hand-label"><span class="hand">♠ Q&#8202;x &nbsp; ♥ J&#8202;x&#8202;x &nbsp; ♦ K&#8202;T&#8202;x&#8202;x&#8202;x &nbsp; ♣ K&#8202;Q&#8202;x</span></div>
+  <div class="hand-label"><span class="hand">&#9824; Q&#8202;x &nbsp; &#9825; J&#8202;x&#8202;x &nbsp; &#9826; K&#8202;T&#8202;x&#8202;x&#8202;x &nbsp; &#9827; K&#8202;Q&#8202;x</span></div>
   <p class="hand-response">Double; good balanced hand with at least three hearts.</p>
 
-  <div class="hand-label"><span class="hand">♠ K&#8202;x&#8202;x&#8202;x &nbsp; ♥ x &nbsp; ♦ A&#8202;T&#8202;x&#8202;x &nbsp; ♣ T&#8202;x&#8202;x&#8202;x</span></div>
+  <div class="hand-label"><span class="hand">&#9824; K&#8202;x&#8202;x&#8202;x &nbsp; &#9825; x &nbsp; &#9826; A&#8202;T&#8202;x&#8202;x &nbsp; &#9827; T&#8202;x&#8202;x&#8202;x</span></div>
   <p class="hand-response">Three spades. This shows an unbalanced hand with four spades, and is non-forcing. You could begin with two notrump or four spades on the first round, but these bids are less descriptive.</p>
 
-  <div class="hand-label"><span class="hand">♠ Q&#8202;x&#8202;x&#8202;x &nbsp; ♥ x &nbsp; ♦ A&#8202;x&#8202;x&#8202;x &nbsp; ♣ A&#8202;J&#8202;x&#8202;x</span></div>
+  <div class="hand-label"><span class="hand">&#9824; Q&#8202;x&#8202;x&#8202;x &nbsp; &#9825; x &nbsp; &#9826; A&#8202;x&#8202;x&#8202;x &nbsp; &#9827; A&#8202;J&#8202;x&#8202;x</span></div>
   <p class="hand-response">Three hearts. This shows an unbalanced hand with four spades, and is game-forcing. You might choose to splinter with four hearts on the first round, but the recommended auction leaves more space for slam investigation.</p>
 
   <p>Note that there is no purpose in starting with redouble on either of the last two hands, because you have no intention of defending.</p>
@@ -200,28 +267,28 @@
 
   <div class="bid-wrap">
     <table class="bid-table">
-      <tr><td>1♠</td><td>Dbl</td><td>Rdbl</td><td>2♥</td></tr>
+      <tr><td>1&#9824;</td><td>Dbl</td><td>Rdbl</td><td>2&#9825;</td></tr>
       <tr><td>Pass</td><td>Pass</td><td>?</td><td></td></tr>
     </table>
   </div>
 
-  <div class="hand-label"><span class="hand">♠ x&#8202;x &nbsp; ♥ K&#8202;T&#8202;x&#8202;x &nbsp; ♦ A&#8202;J&#8202;x&#8202;x&#8202;x &nbsp; ♣ Q&#8202;x</span></div>
+  <div class="hand-label"><span class="hand">&#9824; x&#8202;x &nbsp; &#9825; K&#8202;T&#8202;x&#8202;x &nbsp; &#9826; A&#8202;J&#8202;x&#8202;x&#8202;x &nbsp; &#9827; Q&#8202;x</span></div>
   <p class="hand-response">Double. Gotcha!</p>
 
-  <div class="hand-label"><span class="hand">♠ x&#8202;x&#8202;x &nbsp; ♥ K&#8202;T&#8202;x &nbsp; ♦ A&#8202;J&#8202;x&#8202;x&#8202;x &nbsp; ♣ Q&#8202;x</span></div>
-  <p class="hand-response">Two spades. Typically, 10–12 with three-card support.</p>
+  <div class="hand-label"><span class="hand">&#9824; x&#8202;x&#8202;x &nbsp; &#9825; K&#8202;T&#8202;x &nbsp; &#9826; A&#8202;J&#8202;x&#8202;x&#8202;x &nbsp; &#9827; Q&#8202;x</span></div>
+  <p class="hand-response">Two spades. Typically, 10&ndash;12 with three-card support.</p>
 
-  <div class="hand-label"><span class="hand">♠ Q&#8202;x &nbsp; ♥ A&#8202;x &nbsp; ♦ J&#8202;T&#8202;x&#8202;x&#8202;x &nbsp; ♣ K&#8202;J&#8202;x&#8202;x</span></div>
+  <div class="hand-label"><span class="hand">&#9824; Q&#8202;x &nbsp; &#9825; A&#8202;x &nbsp; &#9826; J&#8202;T&#8202;x&#8202;x&#8202;x &nbsp; &#9827; K&#8202;J&#8202;x&#8202;x</span></div>
   <p class="hand-response">Two notrump. Natural. Partner will infer that you have the minors, because, unless you have trump support, your redouble shows two suits.</p>
 
-  <div class="hand-label"><span class="hand">♠ Q&#8202;x &nbsp; ♥ A&#8202;x &nbsp; ♦ A&#8202;J&#8202;x&#8202;x&#8202;x &nbsp; ♣ K&#8202;J&#8202;x&#8202;x</span></div>
+  <div class="hand-label"><span class="hand">&#9824; Q&#8202;x &nbsp; &#9825; A&#8202;x &nbsp; &#9826; A&#8202;J&#8202;x&#8202;x&#8202;x &nbsp; &#9827; K&#8202;J&#8202;x&#8202;x</span></div>
   <p class="hand-response">Three diamonds. Forcing.</p>
 
-  <div class="hand-label"><span class="hand">♠ Q&#8202;x&#8202;x &nbsp; ♥ Q&#8202;x &nbsp; ♦ K&#8202;T&#8202;x&#8202;x &nbsp; ♣ A&#8202;Q&#8202;x&#8202;x</span></div>
+  <div class="hand-label"><span class="hand">&#9824; Q&#8202;x&#8202;x &nbsp; &#9825; Q&#8202;x &nbsp; &#9826; K&#8202;T&#8202;x&#8202;x &nbsp; &#9827; A&#8202;Q&#8202;x&#8202;x</span></div>
   <p class="hand-response">Three hearts. Three-card spade support, choice of games.</p>
 
-  <div class="hand-label"><span class="hand">♠ x&#8202;x&#8202;x &nbsp; ♥ x &nbsp; ♦ A&#8202;K&#8202;x&#8202;x &nbsp; ♣ Q&#8202;T&#8202;x&#8202;x&#8202;x</span></div>
-  <p class="hand-response">Three spades. 10–12, three-card spade support, unbalanced.</p>
+  <div class="hand-label"><span class="hand">&#9824; x&#8202;x&#8202;x &nbsp; &#9825; x &nbsp; &#9826; A&#8202;K&#8202;x&#8202;x &nbsp; &#9827; Q&#8202;T&#8202;x&#8202;x&#8202;x</span></div>
+  <p class="hand-response">Three spades. 10&ndash;12, three-card spade support, unbalanced.</p>
 
   <p>Note that, despite holding spade support, you can begin with a redouble in order to describe your hand, or to suggest the possibility of defending.</p>
 
@@ -229,43 +296,43 @@
 
   <p>My methods will solve some of your old problems, but they will also create some new ones. Try these:</p>
 
-  <div class="hand-label"><span class="hand">♠ A&#8202;Q&#8202;x&#8202;x &nbsp; ♥ J&#8202;x&#8202;x &nbsp; ♦ Q&#8202;x &nbsp; ♣ Q&#8202;T&#8202;x&#8202;x</span></div>
+  <div class="hand-label"><span class="hand">&#9824; A&#8202;Q&#8202;x&#8202;x &nbsp; &#9825; J&#8202;x&#8202;x &nbsp; &#9826; Q&#8202;x &nbsp; &#9827; Q&#8202;T&#8202;x&#8202;x</span></div>
 
   <div class="bid-wrap">
     <table class="bid-table">
-      <tr><td>1♦</td><td>Dbl</td><td>Rdbl</td><td>1♥</td></tr>
+      <tr><td>1&#9826;</td><td>Dbl</td><td>Rdbl</td><td>1&#9825;</td></tr>
       <tr><td>Pass</td><td>Pass</td><td>?</td><td></td></tr>
     </table>
   </div>
 
   <p>One notrump. This auction shows spades and clubs. With a stronger hand, cue-bid. With five spades, bid one spade.</p>
 
-  <div class="hand-label"><span class="hand">♠ K&#8202;T&#8202;x&#8202;x&#8202;x &nbsp; ♥ K&#8202;Q&#8202;x &nbsp; ♦ A&#8202;x&#8202;x &nbsp; ♣ J&#8202;x</span></div>
+  <div class="hand-label"><span class="hand">&#9824; K&#8202;T&#8202;x&#8202;x&#8202;x &nbsp; &#9825; K&#8202;Q&#8202;x &nbsp; &#9826; A&#8202;x&#8202;x &nbsp; &#9827; J&#8202;x</span></div>
 
   <div class="bid-wrap">
     <table class="bid-table">
-      <tr><td>1♠</td><td>2NT</td><td>Pass</td><td>Pass</td></tr>
+      <tr><td>1&#9824;</td><td>2NT</td><td>Pass</td><td>Pass</td></tr>
       <tr><td>?</td><td></td><td></td><td></td></tr>
     </table>
   </div>
 
-  <p>Double. Partner could have a balanced 20 count. I know — you can hardly wait to hold a strong East hand and trap pass against me.</p>
+  <p>Double. Partner could have a balanced 20 count. I know &mdash; you can hardly wait to hold a strong East hand and trap pass against me.</p>
 
-  <div class="hand-label"><span class="hand">♠ Q&#8202;x &nbsp; ♥ A&#8202;Q&#8202;x&#8202;x &nbsp; ♦ K&#8202;T&#8202;x&#8202;x&#8202;x &nbsp; ♣ x&#8202;x</span></div>
+  <div class="hand-label"><span class="hand">&#9824; Q&#8202;x &nbsp; &#9825; A&#8202;Q&#8202;x&#8202;x &nbsp; &#9826; K&#8202;T&#8202;x&#8202;x&#8202;x &nbsp; &#9827; x&#8202;x</span></div>
 
   <div class="bid-wrap">
     <table class="bid-table">
-      <tr><td>1♠</td><td>2NT</td><td>?</td><td></td></tr>
+      <tr><td>1&#9824;</td><td>2NT</td><td>?</td><td></td></tr>
     </table>
   </div>
 
   <p>Double is right if they are going to choose diamonds, but Pass is right if they choose clubs. I tend to pass, figuring they are more likely to land in the lower suit.</p>
 
-  <div class="hand-label"><span class="hand">♠ A&#8202;Q&#8202;x&#8202;x&#8202;x &nbsp; ♥ K&#8202;x &nbsp; ♦ A&#8202;K&#8202;x &nbsp; ♣ Q&#8202;x&#8202;x</span></div>
+  <div class="hand-label"><span class="hand">&#9824; A&#8202;Q&#8202;x&#8202;x&#8202;x &nbsp; &#9825; K&#8202;x &nbsp; &#9826; A&#8202;K&#8202;x &nbsp; &#9827; Q&#8202;x&#8202;x</span></div>
 
   <div class="bid-wrap">
     <table class="bid-table">
-      <tr><td>1♠</td><td>Pass</td><td>Pass</td><td>Dbl</td></tr>
+      <tr><td>1&#9824;</td><td>Pass</td><td>Pass</td><td>Dbl</td></tr>
       <tr><td>?</td><td></td><td></td><td></td></tr>
     </table>
   </div>
@@ -274,3 +341,5 @@
 
   <p>I am reminded of Al Roth, who used to lecture constantly on the virtues of passing. Surely it is time to start passing more over takeout doubles. In so doing, your redoubles can be reserved for carefully delineated hands. You will extract more blood from the opponents, and create fewer problems for yourself.</p>
 </div>
+</body>
+</html>
