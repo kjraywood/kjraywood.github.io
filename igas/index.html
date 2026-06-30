@@ -36,15 +36,15 @@
     margin: 1.2rem 0;
   }
   .problem .label {
-    font-weight: 500;
-    color: #666;
+    font-weight: 400;
+    color: #1a1a18;
   }
 
   .bid-wrap { text-align: center; }
   .bid-table { border-collapse: collapse; margin: 0 auto; }
   .bid-table.headed th {
-    color: #666;
-    font-weight: 500;
+    color: #1a1a18;
+    font-weight: 400;
     font-family: Georgia, 'Times New Roman', serif;
     text-align: center;
     border-bottom: 0.5px solid #888;
@@ -70,18 +70,18 @@
     .art .byline { font-size: clamp(14px, 4vw, 16px); margin-bottom: 1.5rem; }
 
     .hand {
-      font-size: clamp(14px, 3.8vw, 15px);
+      font-size: clamp(16px, 4.5vw, 18px);
       padding: 0.4rem 0.75rem;
       margin: 0.3rem 0 0.5rem;
       letter-spacing: 0.08em;
       word-spacing: 0.3em;
     }
 
-    .problem .label { font-size: clamp(13px, 3.5vw, 14px); margin-bottom: 0.4rem; }
+    .problem .label { font-size: clamp(16px, 4.5vw, 18px); margin-bottom: 0.4rem; }
 
     .bid-wrap { margin: 0.6rem 0 0.9rem; }
-    .bid-table { font-family: 'Courier New', Courier, monospace; font-size: clamp(14px, 3.8vw, 15px); }
-    .bid-table.headed th { font-size: clamp(14px, 3.8vw, 15px); padding: 3px 10px; }
+    .bid-table { font-family: 'Courier New', Courier, monospace; font-size: clamp(16px, 4.5vw, 18px); }
+    .bid-table.headed th { font-size: clamp(16px, 4.5vw, 18px); padding: 3px 10px; }
     .bid-table td { padding: 3px 10px; }
 
     .hand-block { margin: 0.5rem 0 0.2rem; }
@@ -90,9 +90,10 @@
     @media (prefers-color-scheme: dark) {
       body { background: #1e1e1c; }
       .art { color: #e8e6e0; }
-      .art .byline, .problem .label { color: #999; }
+      .art .byline { color: #999; }
+      .problem .label { color: #e8e6e0; }
       .hand { background: #2a2a28; border-color: #444; }
-      .bid-table.headed th { color: #999; border-bottom-color: #444; }
+      .bid-table.headed th { color: #e8e6e0; border-bottom-color: #444; }
     }
   }
 
@@ -137,7 +138,7 @@
     }
 
     .hand {
-      font-size: 8.5pt;
+      font-size: 9.5pt;
       padding: 2pt 5pt;
       margin: 2pt 0 3pt;
       letter-spacing: 0.06em;
@@ -149,11 +150,11 @@
       margin: 6pt 0;
       break-inside: avoid;
     }
-    .problem .label { font-size: 8pt; margin-bottom: 2pt; }
+    .problem .label { font-size: 9.5pt; margin-bottom: 2pt; }
 
     .bid-wrap { margin: 4pt 0 5pt; break-inside: avoid; }
-    .bid-table { font-family: Georgia, 'Times New Roman', serif; font-size: 9pt; }
-    .bid-table.headed th { font-size: 9pt; padding: 1pt 7pt; }
+    .bid-table { font-family: 'Courier New', Courier, monospace; font-size: 9.5pt; }
+    .bid-table.headed th { font-family: Georgia, 'Times New Roman', serif; font-size: 9.5pt; padding: 1pt 7pt; }
     .bid-table td { padding: 1pt 7pt; }
 
     .hand-block { margin: 3pt 0 1pt; break-inside: avoid; }
